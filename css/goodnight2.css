@@ -1,0 +1,168 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    height: 1000px;
+    background-color: rgba(76, 112, 167, 1);
+
+}
+
+.material-icons.md-60 {
+    font-size: 60px;
+}
+
+.moon,
+.monitor,
+.floder,
+.personal {
+    width: 170px;
+    height: 150px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: stretch;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(49, 78, 122, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar li {
+    position: relative;
+    padding: 19px;
+    font-size: 30px;
+
+}
+
+.material-icons.md-60.moonlight,
+.sleep {
+    color: rgba(255, 209, 1, 1);
+}
+
+.logo {
+    position: absolute;
+    top: 91px;
+    left: 285px;
+    width: 138px;
+    height: 108px;
+}
+
+
+
+@media screen and (max-width:720px) {
+
+    .navbar ul>li,
+    .icons {
+        display: none;
+    }
+}
+
+.darkblue-ground {
+    position: absolute;
+    width: 688px;
+    height: 766px;
+    right: -13px;
+    top: 421px;
+    border-radius: 140px 0px 0px 140px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.5);
+    background: rgba(49, 78, 122, 1);
+}
+
+h1 {
+    font-size: 53px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 90px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    top: 510px;
+    left: 90px;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    top: 620px;
+    left: 90px;
+    color: rgb(255, 255, 255);
+}
+
+.level1,
+.level2,
+.level3,
+.level4,
+.level5 {
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    top: 640px;
+    background-color: white;
+}
+
+.level1 {
+    left: 350px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: rgba(255, 209, 1, 1);
+}
+
+.level2 {
+    left: 410px;
+    background-color: rgba(255, 209, 1, 1);
+}
+
+.level3 {
+    left: 470px;
+}
+
+.level4 {
+    left: 530px;
+}
+
+.level5 {
+    left: 590px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.two {
+    width: 700px;
+    height: auto;
+    position: absolute;
+    top: 730px;
+    left: 12.5px;
+}

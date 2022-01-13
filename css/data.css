@@ -1,0 +1,113 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    height: 1000px;
+    background-color: rgba(76, 112, 167, 1);
+
+}
+
+.material-icons.md-60{
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    padding-top: 72px;
+    padding-bottom: 41px;
+    font-size: 47px;
+    text-align: center;
+}
+
+.week{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-size: 30pt;
+    background-color: #314F78;
+    width: 116px;
+    height: 64px;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    font: weight 900px;;
+}
+
+.week1{
+    background: #FFD101;
+    color: black;
+    font-size: 30pt;
+}
+
+.moon,
+.monitor,
+.floder,
+.personal {
+    width: 170px;
+    height: 150px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: stretch;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(49, 78, 122, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar li {
+    position: relative;
+    padding: 19px;
+    font-size: 30px;
+}
+
+.recode,
+.slemp,
+.mydata {
+    color: rgb(255, 255, 255);
+}
+
+.material-icons.md-60.equalizer,
+.data {
+    color: rgba(255, 209, 1, 1);
+}
+
+@media screen and (max-width:720px) {
+
+    .navbar ul>li,
+    .icons {
+        display: none;
+    }
+}

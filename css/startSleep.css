@@ -1,0 +1,199 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    height: 1000px;
+    background-color: rgba(76, 112, 167, 1);
+
+}
+
+.material-icons.md-60 {
+    font-size: 60px;
+}
+
+.moon,
+.monitor,
+.floder,
+.personal {
+    width: 170px;
+    height: 150px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: stretch;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(49, 78, 122, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar li {
+    position: relative;
+    padding: 19px;
+    font-size: 30px;
+
+}
+
+.material-icons.md-60.moonlight,
+.sleep {
+    color: rgba(255, 209, 1, 1);
+}
+
+.logo {
+    position: absolute;
+    top: 91px;
+    left: 285px;
+    width: 138px;
+    height: 108px;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 295px;
+    left: 55px;
+}
+
+h2 {
+    font-size: 115px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 375px;
+    left: 355px;
+}
+
+h3 {
+    font-size: 32px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 490px;
+    left: 62px;
+}
+
+.music-icon,
+.sun-icon,
+.moon-icon,
+.alarm-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.music-icon {
+    left: 65px;
+    top: 597px;
+    position: absolute;
+}
+
+.sun-icon {
+    left: 210px;
+    top: 597px;
+    position: absolute;
+}
+
+.moon-icon {
+    left: 360px;
+    top: 598px;
+    position: absolute;
+}
+
+.alarm-icon {
+    left: 510px;
+    top: 598px;
+    position: absolute;
+}
+
+.yellow-btn {
+    background-color: rgba(255, 209, 1, 1);
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    width: 950px;
+    height: 950px;
+    top: 800px;
+    left: 180px;
+    position: fixed;
+    margin: 0;
+}
+
+h4 {
+    font-size: 110px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 1100px;
+    left: 290px;
+    color: rgba(49, 78, 122, 1);
+}
+
+@media screen and (max-width:720px) {
+
+    .navbar ul>li,
+    .icons {
+        display: none;
+    }
+}
+
+.timer {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    top: 720px;
+    left: 63px;
+    background-color: rgba(49, 78, 122, 1);
+    border-radius: 30px;
+    font-size: 55px;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150px;
+    letter-spacing: 3px;
+    display: flex;
+    padding-left: 30px;
+}
+
+
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/startSleep.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Slemp</title>
+</head>
+<body>
+    <img src="./pic/Group 27.png" alt="" class="logo">
+    <h1>Hello!</br>起床時間</h1>
+    <h2>08:00</h2>
+    <h3>睡眠時間21:30</h3>
+    <a href="./music.html"><img src="./pic/Group 147.png" alt="" class="music-icon"></a>
+    <a href="./wakeup.html"><img src="./pic/Group 183.png" alt="" class="sun-icon"></a>
+    <a href="./goodNight.html"><img src="./pic/Group 151.png" alt="" class="moon-icon"></a>
+    <img src="./pic/Group 181.png" alt="" class="alarm-icon">
+    <div class="yellow-btn"></div>
+    <a href="start.html"><h4>START</h4></a>
+    <div class="timer">
+        <span id="counthour">
+            00
+        </span>
+        <div class="empty">:</div>
+        <span id="countmin">
+            00
+        </span>
+        <div class="empty">:</div>
+        <span id="countting">
+            00
+        </span>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <div class="moon">
+                <a href="./index.html"><span class="material-icons md-60 moonlight">
+                    dark_mode
+                </span></a>
+                    <li><a href="./index.html" class="sleep">睡眠</a></li>
+            </div>
+            <div class="monitor">
+                <a href="./recode.html"><span class="material-icons md-60 heart">
+                    monitor_heart
+                </span></a>
+                    <li><a href="./recode.html" class="recode">紀錄</a></li>
+            </div>
+            <div class="floder">
+                <a href="./data.html"><span class="material-icons md-60 equalizer">
+                    equalizer
+                </span></a>
+                    <li><a href="./data.html" class="data">統計資訊</a></li>
+            </div>
+            <div class="personal">
+                <a href="./mydata.html"><span class="material-icons md-60 person">
+                    person
+                </span></a>
+                    <li><a href="./mydata.html" class="mydata">個人檔案</a></li>
+            </div>
+        </ul>
+    </nav>
+</body>
+</html>
+
+<script>
+    var countNumber = 0;
+    var countMinNumber = 0;
+    var countHourNumber = 0;
+    var timerInterval = ''
+
+    
+    setInterval(function() {
+        if(countNumber == 60){
+            clearInterval(timerInterval)
+            countNumber = 00;
+        }else{
+            countNumber = countNumber +1;
+        document.getElementById("countting").innerText = countNumber;
+        console.log('1'+count);
+        }
+
+        console.log(countNumber)
+    }, 1000)
+
+    setInterval(function() {
+        if(countMinNumber == 60){
+            clearInterval(timerInterval)
+            countMinNumber = 00;
+        }else{
+            countMinNumber = countMinNumber +1;
+        document.getElementById("countmin").innerText = countMinNumber;
+        console.log('1'+count);
+        }
+
+        console.log(countNumber)
+    }, 60000)
+
+    setInterval(function() {
+        if(countHourNumber == 60){
+            clearInterval(timerInterval)
+            countHourNumber == 00;
+        }else{
+            countHourNumber = countHourNumber +1;
+            document.getElementById("counthour").innerText = countHourNumber;
+            console.log('1'+count);
+        }
+        
+        console.log(countHourNumber)
+    }, 3600000)
+
+</script>

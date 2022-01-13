@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/circleRed.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Slemp</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <div class="moon">
+                <a href="./index.html"><span class="material-icons md-60 moonlight">
+                    dark_mode
+                </span></a>
+                    <li><a href="./index.html" class="sleep">睡眠</a></li>
+            </div>
+            <div class="monitor">
+                <a href="./recode.html"><span class="material-icons md-60 heart">
+                    monitor_heart
+                </span></a>
+                    <li><a href="./recode.html" class="recode">紀錄</a></li>
+            </div>
+            <div class="floder">
+                <a href="./data.html"><span class="material-icons md-60 equalizer">
+                    equalizer
+                </span></a>
+                    <li><a href="./data.html" class="data">統計資訊</a></li>
+            </div>
+            <div class="personal">
+                <a href="./mydata.html"><span class="material-icons md-60 person">
+                    person
+                </span></a>
+                    <li><a href="./mydata.html" class="mydata">個人資訊</a></li>
+            </div>
+        </ul>
+    </nav>
+    <h1 class="alarm">鬧鐘設定</h1>
+    <b class="text1">選擇天數</b>
+    <button class="button day">
+        日
+        <a href=""></a>
+    </button>
+    <button class="button1 day">
+        一
+        <a href=""></a>
+    </button>
+    <button class="button2 day">
+        二
+        <a href=""></a>
+    </button>
+    <button class="button3 day">
+        三
+        <a href=""></a>
+    </button>
+    <button class="button4 day">
+        四
+        <a href=""></a>
+    </button>
+    <button class="button5 day">
+        五
+        <a href=""></a>
+    </button>
+    <button class="button6 day">
+        六
+        <a href=""></a>
+    </button>
+    <b class="text2">選擇時數</b>
+    <img src="./icon/Vector.png" alt="" class="sleepTime1">
+    <b class="time1">下午12:30</b>
+    <p class="smallText1">就寢時間</p>
+    <img src="./icon/Group 32 (1).png" alt="" class="sleepTime2">
+    <b class="time2">上午5:50</b>
+    <p class="smallText2">喚醒時間</p>
+    <img src="./pic/Red.png" alt="" class="circle">
+    <div class="click">
+        <a href="./circleRed2.html" class="timing">
+            <img src="./pic/Redmoon.png" alt="">
+        </a>         
+    </div>
+    <div class="click2">
+        <a href="./circleRed2.html" class="timing">
+            <img src="./pic/Redalarm.png" alt="">
+        </a>         
+    </div>
+    <p class="smallText3">其實睡太多這樣的事情。除非您知道自己需要睡更久時間，否則請盡量維持7到9小時的睡眠。</p>
+
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(".day").click(function() {  
+            if($(this).hasClass("buttonColor")){
+
+$(this).removeClass("buttonColor");
+
+}else{
+
+$(this).addClass("buttonColor");
+
+}    
+
+});       
+    </script>
+
+</body>
+</html>
